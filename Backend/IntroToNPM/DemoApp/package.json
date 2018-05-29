@@ -1,8 +1,8 @@
 {
-  "name": "project",
+  "name": "DemoApp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "cat-me": "^1.0.3",
+    "faker": "^4.1.0",
+    "knock-knock-jokes": "^1.7.0"
   }
 }
