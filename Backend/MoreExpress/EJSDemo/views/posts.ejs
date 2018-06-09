@@ -1,19 +1,21 @@
-<h1>The Posts Page</h1>
+<% include partials/header %>
+    <h1>The Posts Page</h1>
 
-<% for(let i = 0; i < postsVar.length; i++) { %>
-    <li>
-        <%= postsVar[i].title %> -
-            <strong>
-                <%= postsVar[i].author %>
-            </strong>
-    </li>
-    <% } %>
+    <% for(let i = 0; i < postsVar.length; i++) { %>
+        <li>
+            <%= postsVar[i].title %> -
+                <strong>
+                    <%= postsVar[i].author %>
+                </strong>
+        </li>
+        <% } %>
 
-        <%   postsVar.forEach((post) => { %>
-            <li>
-                <%= post.title %> -
-                    <strong>
-                        <%= post.author %>
-                    </strong>
-            </li>
-            <%   }) %>
+            <%   postsVar.forEach((post) => { %>
+                <li>
+                    <%= post.title %> -
+                        <strong>
+                            <%= post.author %>
+                        </strong>
+                </li>
+                <%   }) %>
+                    <% include partials/footer %>
